@@ -47,6 +47,12 @@
 			this.nyPodcast = new System.Windows.Forms.Button();
 			this.sparaPodcast = new System.Windows.Forms.Button();
 			this.tabortPodcast = new System.Windows.Forms.Button();
+			this.comboFrekvens = new System.Windows.Forms.ComboBox();
+			this.comboKategori = new System.Windows.Forms.ComboBox();
+			this.lbInfo = new System.Windows.Forms.ListBox();
+			this.lbInfoAvsnitt = new System.Windows.Forms.ListBox();
+			this.Avsnitt = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// nyKategori
@@ -154,7 +160,7 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(9, 240);
+			this.label1.Location = new System.Drawing.Point(9, 230);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(36, 13);
 			this.label1.TabIndex = 9;
@@ -164,7 +170,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(158, 240);
+			this.label2.Location = new System.Drawing.Point(147, 230);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(135, 13);
 			this.label2.TabIndex = 10;
@@ -174,7 +180,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(348, 240);
+			this.label3.Location = new System.Drawing.Point(310, 230);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(58, 13);
 			this.label3.TabIndex = 11;
@@ -182,7 +188,7 @@
 			// 
 			// tbUrl
 			// 
-			this.tbUrl.Location = new System.Drawing.Point(12, 275);
+			this.tbUrl.Location = new System.Drawing.Point(12, 263);
 			this.tbUrl.Name = "tbUrl";
 			this.tbUrl.Size = new System.Drawing.Size(134, 20);
 			this.tbUrl.TabIndex = 12;
@@ -190,7 +196,7 @@
 			// 
 			// nyPodcast
 			// 
-			this.nyPodcast.Location = new System.Drawing.Point(174, 336);
+			this.nyPodcast.Location = new System.Drawing.Point(161, 298);
 			this.nyPodcast.Name = "nyPodcast";
 			this.nyPodcast.Size = new System.Drawing.Size(75, 23);
 			this.nyPodcast.TabIndex = 13;
@@ -199,7 +205,7 @@
 			// 
 			// sparaPodcast
 			// 
-			this.sparaPodcast.Location = new System.Drawing.Point(255, 336);
+			this.sparaPodcast.Location = new System.Drawing.Point(255, 298);
 			this.sparaPodcast.Name = "sparaPodcast";
 			this.sparaPodcast.Size = new System.Drawing.Size(75, 23);
 			this.sparaPodcast.TabIndex = 14;
@@ -208,12 +214,73 @@
 			// 
 			// tabortPodcast
 			// 
-			this.tabortPodcast.Location = new System.Drawing.Point(336, 336);
+			this.tabortPodcast.Location = new System.Drawing.Point(359, 298);
 			this.tabortPodcast.Name = "tabortPodcast";
 			this.tabortPodcast.Size = new System.Drawing.Size(75, 23);
 			this.tabortPodcast.TabIndex = 15;
 			this.tabortPodcast.Text = "Ta bort";
 			this.tabortPodcast.UseVisualStyleBackColor = true;
+			// 
+			// comboFrekvens
+			// 
+			this.comboFrekvens.FormattingEnabled = true;
+			this.comboFrekvens.Items.AddRange(new object[] {
+            "Var 5:e minut",
+            "Var 10:e minut ",
+            "Var 15:e minut",
+            "Var 20:e minut"});
+			this.comboFrekvens.Location = new System.Drawing.Point(161, 262);
+			this.comboFrekvens.Name = "comboFrekvens";
+			this.comboFrekvens.Size = new System.Drawing.Size(121, 21);
+			this.comboFrekvens.TabIndex = 17;
+			// 
+			// comboKategori
+			// 
+			this.comboKategori.FormattingEnabled = true;
+			this.comboKategori.Items.AddRange(new object[] {
+            "Sport",
+            "Historia ",
+            "Miljö"});
+			this.comboKategori.Location = new System.Drawing.Point(313, 262);
+			this.comboKategori.Name = "comboKategori";
+			this.comboKategori.Size = new System.Drawing.Size(121, 21);
+			this.comboKategori.TabIndex = 18;
+			// 
+			// lbInfo
+			// 
+			this.lbInfo.FormattingEnabled = true;
+			this.lbInfo.Location = new System.Drawing.Point(12, 343);
+			this.lbInfo.Name = "lbInfo";
+			this.lbInfo.Size = new System.Drawing.Size(406, 95);
+			this.lbInfo.TabIndex = 19;
+			// 
+			// lbInfoAvsnitt
+			// 
+			this.lbInfoAvsnitt.FormattingEnabled = true;
+			this.lbInfoAvsnitt.Location = new System.Drawing.Point(498, 343);
+			this.lbInfoAvsnitt.Name = "lbInfoAvsnitt";
+			this.lbInfoAvsnitt.Size = new System.Drawing.Size(265, 95);
+			this.lbInfoAvsnitt.TabIndex = 20;
+			// 
+			// Avsnitt
+			// 
+			this.Avsnitt.AutoSize = true;
+			this.Avsnitt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Avsnitt.Location = new System.Drawing.Point(14, 323);
+			this.Avsnitt.Name = "Avsnitt";
+			this.Avsnitt.Size = new System.Drawing.Size(46, 13);
+			this.Avsnitt.TabIndex = 21;
+			this.Avsnitt.Text = "Avsnitt";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(495, 323);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(74, 13);
+			this.label4.TabIndex = 22;
+			this.label4.Text = "AvsnittsInfo";
 			// 
 			// Form1
 			// 
@@ -221,6 +288,12 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Control;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.label4);
+			this.Controls.Add(this.Avsnitt);
+			this.Controls.Add(this.lbInfoAvsnitt);
+			this.Controls.Add(this.lbInfo);
+			this.Controls.Add(this.comboKategori);
+			this.Controls.Add(this.comboFrekvens);
 			this.Controls.Add(this.tabortPodcast);
 			this.Controls.Add(this.sparaPodcast);
 			this.Controls.Add(this.nyPodcast);
@@ -264,6 +337,12 @@
 		private System.Windows.Forms.Button nyPodcast;
 		private System.Windows.Forms.Button sparaPodcast;
 		private System.Windows.Forms.Button tabortPodcast;
+		private System.Windows.Forms.ComboBox comboFrekvens;
+		private System.Windows.Forms.ComboBox comboKategori;
+		private System.Windows.Forms.ListBox lbInfo;
+		private System.Windows.Forms.ListBox lbInfoAvsnitt;
+		private System.Windows.Forms.Label Avsnitt;
+		private System.Windows.Forms.Label label4;
 	}
 }
 
