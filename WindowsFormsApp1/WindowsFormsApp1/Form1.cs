@@ -21,5 +21,10 @@ namespace WindowsFormsApp1
 		{
 
 		}
+
+		private void lbKategori_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
