@@ -14,8 +14,9 @@ namespace WindowsFormsApp1
     {
         public Form1()
         {
-            InitializeComponent();
-        }
+			InitializeComponent();
+			this.Text = "Podcast";
+		}
 
 		private void label1_Click(object sender, EventArgs e)
 		{
